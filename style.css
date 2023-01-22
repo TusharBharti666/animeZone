@@ -1,0 +1,278 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: alex;
+    src: url(resources/font.ttf);
+}
+
+@font-face {
+    font-family: komika;
+    src: url(resources/font2.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #0e8598;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #DDDDDD;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #FFFFFF;
+}   
+
+a{
+    text-decoration: unset;
+}
+
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #BBBBBB;
+}
+
+a:active {
+    color: #FFFFFF;
+}
+
+body{
+    margin: 0;
+}
+
+.backgroundVideoDiv{
+    z-index: 100;
+}
+
+.backgroundVideo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+    
+}
+
+.titleBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #000000;
+    z-index: 200;
+    padding-top:15px;
+}
+
+.titleLogo {
+    font-family: alex;
+    font-size: 32px;
+    color: #FFFFFF;
+    z-index: 200;
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 0 0 15px 15px;
+    width: 180px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    z-index: 101;
+}
+
+.section-1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 30px;
+}
+
+.section-2{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.section-3{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popUp{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+#popUpId{
+    display: none;
+}
+
+.popUpContent{
+    background-color: #000000;
+    width: 90%;
+    height: 520px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    margin-top: 25px;
+
+}
+
+.popUpImageDiv{
+    float: left;
+    width: 45%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.popUpImage{
+    width: 400px;
+    height: 400px;
+}
+
+.popUpInfoDiv{
+    float: right;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px;
+    color: #DDDDDD;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.popUpVideoDiv{
+    height: 80%;
+    width: 60%;
+    padding-top: 100px;
+    margin-bottom: 450px;
+}
+
+.popUpTopBar{
+    position: absolute;
+    width: 88.5%;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 10px 10px 0 0;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.popUpTitle{
+    color: #0e8598;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#popUpCloseBtn{
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#popUpCloseBtn:hover {
+    color: red;
+}
+
+.slideImageDiv{
+    display: inline;
+}
+
+.slideImage{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.bottomImage{
+    height: 300px;
+    margin-top: 20px;
+}
+
+#titleText{
+    position: absolute;
+    margin-top: 180px;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-family: komika;
+    margin-left: 50px;
+}
+
+.profilePhotoDiv{
+    padding-top: 135px;
+    padding-left: 55px;  
+}
+
+.profilePhoto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.profileInfoDiv{
+    float: left;
+    margin-left: 340px;
+    margin-top: -230px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-left: 5px solid #CCCCCC;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.profileName{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.profileDetails{
+    color: #DDDDDD;
+    font-size: 22px;
+}
+
+.soundBtn{
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    float: right;
+    font-size: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.tabs{
+    display: inline;
+    color: #FFFFFF;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="fill.js"></script>
+        <title>
+            Anime Zone-Watch Anime Trailers
+        </title>
+    </head>
+
+    <body onload="autoWrite();">
+        <audio id="sound">
+            <source src="resources/sound2.ogg" type="audio/ogg">
+        </audio>
+
+        <div class="backgroundVideoDiv">
+            <video autoplay muted loop class="backgroundVideo">
+                <source src="resources/background_video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="titleBar" id="titleBarId">
+            <div class="tabs">
+                <a href="javascript:window.scrollTo(0, 0);">Home</a>
+            </div>
+            <div class="tabs">
+                <a href="#animeSection">Anime</a>
+            </div>
+            <div class="tabs">
+                <a href="#profileInfoId">Contact</a>
+            </div>
+            <center>
+                <div class="titleLogo" onclick="javascript:window.location.href=window.location.href">
+                    Anime Zone
+                </div>
+            </center>
+            <div class="soundBtn" onclick="if(soundStatus){stopSound();}else{startSound();}" id="soundIcon">
+                <i class="fa fa-volume-off"></i>
+            </div>
+        </div>
+
+        <div class="popUp" id="popUpId">
+            <center>
+                <div class="popUpContent">
+                    <center>
+                        <div class="popUpTopBar">
+                            <div class="popUpCloseDiv" onclick="closeModel();">
+                                <i class="fa fa-close" id="popUpCloseBtn"></i>
+                            </div>
+                        </div>
+                    </center>
+
+                    <center>
+                        <div class="popUpTitle" id="popUpTitleId">
+                        </div>
+                    </center>
+
+                    <div class="popUpImageDiv">
+                        <img src="" class="popUpImage" id="popUpImageId">
+                    </div>
+                    <div class="popUpInfoDiv" id="popUpInfoId">
+                    </div>
+                    <div class="popUpVideoDiv">
+                        <iframe id="popUpVideoId" width="100%" height="100%"
+                        src="">
+                        </iframe>
+                    </div>
+                </div>
+            </center>
+        </div>
+    
+        <div class="main">
+            <div class="section-1">
+                <div id="titleText">
+                </div>
+            </div>
+
+            <div class="section-2" id="animeSection">
+                <center>
+                    <marquee behavior="scroll" direction="left" scrollamount="15" >
+                        <div onclick="fillDataUsingId(1);" class="slideImageDiv">
+                            <img src="images/naruto.jpg" class="slideImage">
+                        </div>
+
+                        <div onclick="fillDataUsingId(2);" class="slideImageDiv"">
+                            <img src="images/deathnote.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(3);" class="slideImageDiv">
+                            <img src="images/one.jpg" class="slideImage">
+                        </div>
+
+                        <div onclick="fillDataUsingId(4);" class="slideImageDiv"">
+                            <img src="images/black.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(5);" class="slideImageDiv">
+                            <img src="images/cowboy.jpg" class="slideImage">
+                        </div>
+
+                        <div onclick="fillDataUsingId(6);" class="slideImageDiv"">
+                            <img src="images/dragon.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(7);" class="slideImageDiv">
+                            <img src="images/fmab.jpg" class="slideImage">
+                        </div>
+
+                        <div onclick="fillDataUsingId(8);" class="slideImageDiv"">
+                            <img src="images/kaisen.png" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(9);" class="slideImageDiv">
+                            <img src="images/aot.png" class="slideImage">
+                        </div>
+
+                        <div onclick="fillDataUsingId(10);" class="slideImageDiv"">
+                            <img src="images/mha.png" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(11);" class="slideImageDiv"">
+                            <img src="images/punch.png" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(12);" class="slideImageDiv"">
+                            <img src="images/demon.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(13);" class="slideImageDiv"">
+                            <img src="images/dracula.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(14);" class="slideImageDiv"">
+                            <img src="images/fate.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(15);" class="slideImageDiv"">
+                            <img src="images/balance.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(16);" class="slideImageDiv"">
+                            <img src="images/inu.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(17);" class="slideImageDiv"">
+                            <img src="images/geass.jpg" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(18);" class="slideImageDiv"">
+                            <img src="images/steins.png" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(19);" class="slideImageDiv"">
+                            <img src="images/det.png" class="slideImage">
+                        </div>
+                        <div onclick="fillDataUsingId(20);" class="slideImageDiv"">
+                            <img src="images/berserk.jpg" class="slideImage">
+                        </div>
+                    </marquee>
+                </center>
+            </div>
+
+            <div class="section-3">
+                <div class="profilePhotoDiv">
+                    <img src="resources/developer.jpg" class="profilePhoto">
+                </div>
+                <div class="profileInfoDiv" id="profileInfoId">
+                    <div class="profileName">
+                        Tushar Bharti
+                    </div>
+                    <div class="profileDetails">
+                        12015881
+                    </div>
+                    <div class="profileDetails">
+                        Computer Science & Engineering
+                    </div>
+                    <div class="profileDetails">
+                        Lovely Professional University
+                    </div>
+                    <div class="profileDetails">
+                        Jalandhar, Punjab, India - 144001
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
